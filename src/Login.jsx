@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col} from 'react-bootstrap'
+import { FormattedMessage } from 'react-intl';
 import './login.css'
 
 export default function Login(){
@@ -9,26 +10,28 @@ export default function Login(){
     }
 
     return(
-        <div className='background'>
-            <Row>
-                <Col>
-                    <Container>
-                        <h1>Log in</h1>
+            <Col className='background'>
+                <Row style={{display:'flex', alignContent:'center'}}>
+                    <Container className='login-background'>
+                        <h1>
+                            <FormattedMessage id="app.login" defaultMessage="Login" />
+                        </h1>
                         <form onSubmit={validar_contraseña}>
                             <div className="form-group">
-                                <label for="exampleInputEmail1">Correo</label>
+                                <label htmlFor="exampleInputEmail1">
+                                    <FormattedMessage id="app.email" defaultMessage="Email" />
+                                </label>
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    <small id="emailHelp" className="form-text text-muted"><FormattedMessage id="app.emailHelp" defaultMessage="We'll never share your email with anyone else." /></small>
                             </div>
                             <div className="form-group">
-                                <label for="exampleInputPassword1">Contraseña</label>
+                                <label htmlFor="exampleInputPassword1"><FormattedMessage id="app.password" defaultMessage="Password" /></label>
                                 <input type="password" className="form-control" id="exampleInputPassword1" minLength={8}/>
                             </div>
-                            <button type="submit" className="btn btn-primary">Submit</button>
+                            <button type="submit" className="btn btn-primary"><FormattedMessage id="app.submit" defaultMessage="Submit" /></button>
                         </form>
                     </Container>
-                </Col>
-            </Row>
-        </div>
+                </Row>
+            </Col>
     );
 }

@@ -1,0 +1,10 @@
+{
+    "app.login": "Login",
+    "app.email": "Email",
+    "app.emailHelp": "We'll never share your email with anyone else.",
+    "app.password": "Password",
+    "app.submit": "Submit",
+    "app.Cycling": "Cycling",
+    "app.Running": "Running",
+    "app.Swimming": "Swimming"
+  }

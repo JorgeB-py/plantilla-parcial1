@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Proyecto Parcial: Aplicación Web en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Este proyecto es una aplicación web desarrollada en React que simula un sistema de login y una página principal con tarjetas de imágenes representativas de actividades deportivas (ciclismo, natación y correr). Utiliza `react-intl` para la internacionalización (i18n) y Bootstrap para el diseño de la interfaz de usuario.
 
-In the project directory, you can run:
+## Componentes y Tecnologías Usadas
 
-### `npm start`
+### Ambiente de Desarrollo
+- **React**: Framework para el desarrollo de la interfaz de usuario.
+- **React Router**: Para el manejo de rutas dentro de la aplicación.
+- **React Intl**: Internacionalización, permite traducir el contenido de la aplicación según el idioma del usuario.
+- **Bootstrap**: Framework CSS para diseño y estilos de componentes visuales.
+- **Fetch API**: Para obtener datos de una API simulada (`Mockaroo`).
+- **React Bootstrap**: Implementación de Bootstrap en React.
+- **React Modal**: Para mostrar imágenes en una ventana modal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Estructura de Componentes
+- **Login**: Página de inicio de sesión con validación de contraseña y funcionalidad para internacionalización.
+- **Index**: Página principal que muestra tarjetas con imágenes de deportes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Paso a Paso para la Ejecución del Proyecto
 
-### `npm test`
+1. **Clonar el Repositorio**
+   ```bash
+   git clone https://github.com/JorgeB-py/plantilla-parcial1.git
+2. **Instalar las dependencias**
+   npm install
+3. **Iniciar el servidor de desarrollo**
+   npm start
+   Esto abrirá la aplicación en tu navegador predeterminado en http://localhost:3000
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Consideraciones
 
-### `npm run build`
+# Reporte de Decisiones
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Durante el desarrollo del proyecto, se tomaron las siguientes decisiones clave:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Elección de react-intl: Se eligió react-intl para manejar la internacionalización, lo que permite un fácil cambio de idiomas en la aplicación. Esto proporciona una experiencia de usuario más inclusiva y accesible.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Uso de Bootstrap y React Bootstrap: Se implementó Bootstrap y React Bootstrap para una rápida construcción de la interfaz de usuario. Estos frameworks permiten un diseño responsivo y componentes predefinidos que facilitan la creación de una UI atractiva y funcional.
 
-### `npm run eject`
+3. Integración de Fetch API: Se utilizó Fetch API para obtener datos de una API externa, permitiendo una mayor flexibilidad en la obtención de información dinámica. Esto permite la integración con servicios de datos en tiempo real o predefinidos.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Estructura de Componentes: La aplicación fue estructurada en componentes funcionales, aprovechando los hooks de React para manejar el estado y los efectos secundarios, lo que mejora la claridad y la mantenibilidad del código.
