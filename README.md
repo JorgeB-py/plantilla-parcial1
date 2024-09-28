@@ -25,14 +25,17 @@ Este proyecto es una aplicación web desarrollada en React que simula un sistema
    ```bash
    git clone https://github.com/JorgeB-py/plantilla-parcial1.git
 2. **Instalar las dependencias**
-   npm install
+
+   1. npm install
 3. **Iniciar el servidor de desarrollo**
-   npm start
+
+   1. npm start
+   
    Esto abrirá la aplicación en tu navegador predeterminado en http://localhost:3000
 
 ## Consideraciones
 
-# Reporte de Decisiones
+### Reporte de Decisiones
 
 Durante el desarrollo del proyecto, se tomaron las siguientes decisiones clave:
 
